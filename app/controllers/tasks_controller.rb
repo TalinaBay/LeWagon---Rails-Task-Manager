@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   def index
+    @tasks = Task.all # Task is a model -> SINGULAR
   end
 
   def show
